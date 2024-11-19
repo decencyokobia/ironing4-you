@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ironing4You</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        type="text/css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <img src="clothes-on-clothing-hanger-600nw-2338282257.jpg.webp" alt="image of my logo" class="logo-img">
+            <div>
+                <h1>IRONING4YOU</h1>
+                <p id="italicscaption">COLLECTION AND DELIVERY SERVICE</p>
+            </div>
+        </header>
+        <section>
+            <h2>About Us</h2>
+            <p> Welcome to <strong>IRONING4YOU</strong>, where we take the hassle out of ironing! We understand that
+                life
+                can be busy, and keeping up with freshly pressed clothes isn’t always easy. That’s where we come in.
+
+                At <STRONG>IRONING4YOU</STRONG>, we pride ourselves on delivering exceptional ironing services tailored
+                to
+                your needs. With attention to detail and a passion for quality, we ensure every garment is perfectly
+                pressed
+                and ready to wear. Whether it’s your work shirts, delicate fabrics, or everyday wear, we treat your
+                items
+                with the utmost care and professionalism.</p>
+
+            <p>We are committed to saving you time and giving you peace of mind, so you can focus on what truly matters.
+                Let us take care of your ironing and help you look your best every day.</p>
+
+            <p>Thank you for trusting <STRONG>IRONING4YOU</STRONG>. We’re here to make your life easier, one crease-free
+                garment at a time! </p>
+        </section>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Professional and efficient service</li>
+                <li>Affordable rates</li>
+                <li>Quick turnaround time</li>
+                <li>Convenient pick-up and delivery options</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Price List</h2>
+            <p id="adultlist" onmouseover="adultListHover()" onmouseout="adultListNormal()"><span
+                    class="highlight">Adult Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
+            <ul>
+                <li>T-Shirts: £1.00</li>
+                <li>Hoodies: £1.25</li>
+                <li>Shirts/Blouses: £1.25</li>
+                <li>Trousers/Jeans: £1.30</li>
+                <li>Dresses: £1.30</li>
+            </ul>
+            <p id="kidslist" onmouseover="kidsListHover()" onmouseout="kidsListNormal()"><span class="highlight">Kids
+                    Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span> (2-12yrs): £0.80 per item</p>
+            <p id="babylist" onmouseover="babyListHover()" onmouseout="babyListNormal()"><span class="highlight">Baby
+                    Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span> (below 2yrs): £0.65 per item
+            </p>
+            <p id="beddingslist" onmouseover="beddingsListHover()" onmouseout="beddingsListNormal()"><span
+                    class="highlight">Beddings <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
+            <ul>
+                <li>Single duvet cover and pillow case: £3.00</li>
+                <li>Double duvet cover and 2 pillow cases: £4.00</li>
+                <li>King size duvet cover and 2 pillow cases: £5.00</li>
+                <li>Additional pillow cases: £0.25 per item</li>
+                <li>Flat sheets/fitted sheets: £2.00</li>
+            </ul>
+            <p id="towelslist" onmouseover="towelsListHover()" onmouseout="towelsListNormal()"><span
+                    class="highlight">Towels <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
+            <ul>
+                <li>Hand towels: £0.75</li>
+                <li>Bath towels: £1.00</li>
+            </ul>
+            <p>Collection and Delivery within Turriff: £2.50 <em>(Minimum £15 for collection and delivery).</em></p>
+        </section>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Phone Number <i class="fa fa-mobile" aria-hidden="true"></i>:<a href="tel:+447821161931">07821161931</a>
+            </p>
+            <p>
+                Email <i class="fa fa-envelope" aria-hidden="true"></i>:
+                <a href="mailto:ironing4you266@gmail.com">click here</a>
+            </p>
+        </section>
+        <footer>
+            <p>
+                copyright ©Vicky Harrison
+            </p>
+        </footer>
+    </div>
+    <script>
+        function adultListHover() {
+            document.getElementById('adultlist').firstElementChild.style.fontSize = "150%";
+        }
+        function adultListNormal() {
+            document.getElementById('adultlist').firstElementChild.style.fontSize = "100%";
+        }
+        function kidsListHover() {
+            document.getElementById('kidslist').firstElementChild.style.fontSize = "150%";
+        }
+        function kidsListNormal() {
+            document.getElementById('kidslist').firstElementChild.style.fontSize = "100%";
+        }
+        function babyListHover() {
+            document.getElementById('babylist').firstElementChild.style.fontSize = "150%";
+        }
+        function babyListNormal() {
+            document.getElementById('babylist').firstElementChild.style.fontSize = "100%";
+        }
+        function beddingsListHover() {
+            document.getElementById('beddingslist').firstElementChild.style.fontSize = "150%";
+        }
+        function beddingsListNormal() {
+            document.getElementById('beddingslist').firstElementChild.style.fontSize = "100%";
+        }
+        function towelsListHover() {
+            document.getElementById('towelslist').firstElementChild.style.fontSize = "150%";
+        }
+        function towelsListNormal() {
+            document.getElementById('towelslist').firstElementChild.style.fontSize = "100%";
+        }
+    </script>
+</body>
+
+</html>
