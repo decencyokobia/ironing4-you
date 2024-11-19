@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://decencyokobia.github.io/ironing4-you/>/sitemap.xml
