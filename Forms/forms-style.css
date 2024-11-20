@@ -1,0 +1,63 @@
+form {
+    background-color: whitesmoke;
+    display: grid;
+    gap: 5px;
+    height: 90vh;
+    align-items: center;  
+    flex-direction: column;
+    
+}
+
+body {
+    height: auto;
+    padding: 50px 350px 350px 350px;
+    box-sizing: border-box;
+    background-image: url(ai-generated-8452198_1280.webp);
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    color: goldenrod;
+    font-family: Arial;
+    font-size: large;
+}
+
+.button {
+    background-color: goldenrod;
+    width: 97%;
+    padding: 10px;
+    font-size: large;
+    display: block;
+    
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea{
+    padding: 10px;
+    font-size: 16px;
+    width: 95%;
+    height: 100px;
+}
+
+.input {
+    width: 95%;
+}
+.firstLastName {
+    width: 45.3%;
+}
+
+.p-textbelowbutton {
+    text-align: center;
+    color: goldenrod;
+    font-family: Arial;
+    font-size: large; }
+
+fieldset {
+    padding: 10px;
+    border: none;
+}
