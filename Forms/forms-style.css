@@ -1,19 +1,22 @@
-form {
-    background-color: whitesmoke;
-    display: grid;
-    gap: 5px;
-    height: 90vh;
-    align-items: center;  
-    flex-direction: column;
-    
+body {
+    height: 100vh;
+    padding: 0;
+    background-image: url(ai-generated-8452198_1280.webp);
+    margin: 0; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-    height: auto;
-    padding: 50px 350px 350px 350px;
-    box-sizing: border-box;
-    background-image: url(ai-generated-8452198_1280.webp);
-    margin: 0;
+form {
+    background-color: whitesmoke; 
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
 }
 
 .header {
@@ -23,46 +26,27 @@ body {
     font-size: large;
 }
 
-.button {
+button {
     background-color: goldenrod;
-    width: 97%;
-    padding: 10px;
-    font-size: large;
-    display: block;
-    
+    border: none;
+    cursor: pointer;
+    }
+button:hover {
+    background-color: white;
 }
 
-input, button {
-    padding: 10px;
-    font-size: 16px;
+input, textarea, button {
+    font-size: 14px;
+    width: 100%;
 }
-
-textarea{
-    padding: 10px;
-    font-size: 16px;
-    width: 95%;
-    height: 100px;
-}
-
-.input {
-    width: 95%;
-}
-.firstLastName {
-    width: 45.3%;
-}
-
-.p-textbelowbutton {
-    text-align: center;
-    color: goldenrod;
-    font-family: Arial;
-    font-size: large; }
 
 fieldset {
     padding: 10px;
     border: none;
 }
+
 @media (max-width: 600px){
-    form {padding: 15;}
-    input, button {width: 100%;
-    padding: 1em;}
+    form {padding: 15px;}
+    input, textarea, button, p {
+font-size: 14px;}
 }
