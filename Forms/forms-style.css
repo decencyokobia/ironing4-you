@@ -61,7 +61,8 @@ fieldset {
     padding: 10px;
     border: none;
 }
-@media screen and (max-width: 600px){
+@media (max-width: 600px){
     form {padding: 15;}
-    input, button {font-size: 14px;}
+    input, button {width: 100%;
+    padding: 1em;}
 }
