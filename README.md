@@ -9,6 +9,7 @@ How to View
 Technologies Used
 - HTML
 - CSS
+- JS
 
 ## Notes
 - The design and content are simple and subject to change as I improve my skills.
