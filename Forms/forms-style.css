@@ -3,6 +3,8 @@ body {
     padding: 0;
     background-image: url(ai-generated-8452198_1280.webp);
     margin: 0; 
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
