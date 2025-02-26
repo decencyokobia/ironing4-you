@@ -6,30 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contactform</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" />
+        type="text/css">
     <link rel="stylesheet" href="forms-style.css">
 </head>
 
 <body>
-    <div>
-        <form>
-            <fieldset class="header">
-                <h1>Contact Us</h1>
-                <p>We will get back to you asap!</p>
-            </fieldset>
-            <fieldset>
-                <p><input type="text" placeholder="First Name" required></p>
-                <p><input type="text" placeholder="Last Name" required></p>
-                <p><input type="email" placeholder="Email" class="input" required></p>
-                <p><input type="text" placeholder="Phone" minlength="11" maxlength="13" class="input" required></p>
-                <p><textarea placeholder="Your Message..." maxlength="1000"></textarea></p>
-            </fieldset>
-            <fieldset>
-                <button>Send</button>
-                <p>You may also call us @ <a href="tel:+447821161931">07821161931</a></p>
-            </fieldset>
-        </form>
-    </div>
+
+    <form action="https://formspree.io/f/mqaeoyyn" method="post">
+        <h1 class="form--header form--text">Contact Us</h1>
+        <h2 id="form--span" class="form--text">We will get back to you as soon as possible!</h2>
+        <fieldset class="input-fields">
+            <input class="input__item" type="text" placeholder="First Name" required name="First Name">
+            <input class="input__item" type="text" placeholder="Last Name" required name="Last Name">
+            <input class="input__item" type="email" placeholder="Email" required name="Email">
+            <input class="input__item" type="text" placeholder="Phone" minlength="11" maxlength="13" required
+                name="Phone Number">
+            <textarea class="input__item textarea" placeholder="Your Message..." maxlength="1000" cols="20" rows="10"
+                name="Message"></textarea>
+        </fieldset>
+        <button class="btn btn--primary" id="submit-btn" type="submit">Send</button>
+        <h3 class="form--text call-us">You may also call us @ <a href="tel:+447821161931">07821161931</a></h3>
+    </form>
+
 </body>
 
 </html>

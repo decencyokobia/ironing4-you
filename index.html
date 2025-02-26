@@ -11,52 +11,76 @@
     <meta name="author" content="Ironing4You">
     <meta name="robots" content="index, follow">
 
-    <title>Home Page</title>
+    <title>Ironing4You</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        type="text/css" />
+        type="text/css">
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <div id="container">
-        <header>
+
+    <header class="header-container">
+        <div class="logo-container">
             <img src="images/clothes-on-clothing-hanger-600nw-2338282257.jpg.webp" alt="image of my logo"
                 class="logo-img">
-            <div>
-                <h1>IRONING4YOU</h1>
-                <p id="italicscaption">COLLECTION AND DELIVERY SERVICE</p>
-                <nav>
-                    <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+447821161931">Phone</a>
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <a href="mailto:ironing4you266@gmail.com">Email Us</a>
-                    <i class="fa fa-comments" aria-hidden="true"></i> <a href="Forms/contactform.html"
-                        target="_parent">Enquiry
-                        Form</a>
-                </nav>
+            <span class="logo">IRONING4YOU <span class="logo__span">COLLECTION AND DELIVERY SERVICE</span></span>
+        </div>
 
+
+        <div>
+            <svg class="menu-btn" xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px"
+                fill="gold">
+                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg>
+
+            <nav class="nav-bar">
+                <ul class="navBar-items">
+                    <li><a class="links" href="tel:+447821161931">Phone</a></li>
+                    <li><a class="links" href="mailto:ironing4you266@gmail.com">Email
+                            Us</a></li>
+                    <li><a class="links" href="Forms/contactform.html" target="_parent">Enquiry Form</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <ul class="sidebar">
+            <li class="closebar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="gold">
+                    <path
+                        d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                </svg>
+            </li>
+            <li><a class="sidebar-items links" href="tel:+447821161931">Phone</a></li>
+            <li><a class="sidebar-items links" href="mailto:ironing4you266@gmail.com">Email
+                    Us</a></li>
+            <li><a class="sidebar-items links" href="Forms/contactform.html" target="_parent">Enquiry Form</a></li>
+        </ul>
+
+    </header>
+
+
+    <main class="container">
+        <!--! Hero section -->
+        <div class="hero-section">
+            <div class="hero-description">
+                <span class="desp--heroTxt">Say Goodbye to Ironing Hassles – <span class="desp__heroTxt2">Enjoy Your
+                        Free Time!</span></span>
+
+
+                <span class="desp--supportMsg">"Let us make your life easier with professional ironing services, so you
+                    can focus on what really
+                    matters."</span>
+
+                <button type="button" class="hero-btn">Get Started</button>
             </div>
-        </header>
-        <section>
-            <h2>About Us</h2>
-            <p> Welcome to <strong>IRONING4YOU</strong>, where we take the hassle out of ironing! We understand that
-                life
-                can be busy, and keeping up with freshly pressed clothes isn’t always easy. That’s where we come in.
+            <picture class="hero-image">
+                <img src="images/bg-shirts.webp" alt="">
+            </picture>
+        </div>
 
-                At <STRONG>IRONING4YOU</STRONG>, we pride ourselves on delivering exceptional ironing services tailored
-                to
-                your needs. With attention to detail and a passion for quality, we ensure every garment is perfectly
-                pressed
-                and ready to wear. Whether it’s your work shirts, delicate fabrics, or everyday wear, we treat your
-                items
-                with the utmost care and professionalism.</p>
-
-            <p>We are committed to saving you time and giving you peace of mind, so you can focus on what truly matters.
-                Let us take care of your ironing and help you look your best every day.</p>
-
-            <p>Thank you for trusting <STRONG>IRONING4YOU</STRONG>. We’re here to make your life easier, one crease-free
-                garment at a time! </p>
-        </section>
-        <section>
+        <!--! why choose us (feature) section -->
+        <section class="features">
             <h2>Why Choose Us?</h2>
             <ul>
                 <li>Professional and efficient service</li>
@@ -65,84 +89,132 @@
                 <li>Convenient pick-up and delivery options</li>
             </ul>
         </section>
-        <section>
-            <h2>Price List</h2>
-            <p id="adultlist" onmouseover="adultListHover()" onmouseout="adultListNormal()"><span
-                    class="highlight">Adult Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
-            <ul>
-                <li>T-Shirts: £1.00</li>
-                <li>Hoodies: £1.25</li>
-                <li>Shirts/Blouses: £1.25</li>
-                <li>Trousers/Jeans: £1.30</li>
-                <li>Dresses: £1.30</li>
-            </ul>
-            <p id="kidslist" onmouseover="kidsListHover()" onmouseout="kidsListNormal()"><span class="highlight">Kids
-                    Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span> (2-12yrs): £0.80 per item</p>
-            <p id="babylist" onmouseover="babyListHover()" onmouseout="babyListNormal()"><span class="highlight">Baby
-                    Items <i class="fa fa-check-circle-o" aria-hidden="true"></i></span> (below 2yrs): £0.65 per item
-            </p>
-            <p id="beddingslist" onmouseover="beddingsListHover()" onmouseout="beddingsListNormal()"><span
-                    class="highlight">Beddings <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
-            <ul>
-                <li>Single duvet cover and pillow case: £3.00</li>
-                <li>Double duvet cover and 2 pillow cases: £4.00</li>
-                <li>King size duvet cover and 2 pillow cases: £5.00</li>
-                <li>Additional pillow cases: £0.25 per item</li>
-                <li>Flat sheets/fitted sheets: £2.00</li>
-            </ul>
-            <p id="towelslist" onmouseover="towelsListHover()" onmouseout="towelsListNormal()"><span
-                    class="highlight">Towels <i class="fa fa-check-circle-o" aria-hidden="true"></i></span></p>
-            <ul>
-                <li>Hand towels: £0.75</li>
-                <li>Bath towels: £1.00</li>
-            </ul>
-            <p>Collection and Delivery within Turriff: £2.50 <em>(Minimum £15 for collection and delivery).</em></p>
+
+        <!--! Price Section -->
+        <section class="prices">
+            <div>
+                <h2>Price List
+                </h2>
+                <hr class="header-underline">
+            </div>
+            <div class="priceLists">
+                <div class="card">
+                    <span class="label"><span class="highlight">Adult Items <i class="fa fa-check-circle-o"
+                                aria-hidden="true"></i></span>
+                    </span>
+                    <ul>
+                        <li>T-Shirts: £1.00</li>
+                        <li>Hoodies: £1.25</li>
+                        <li>Shirts/Blouses: £1.25</li>
+                        <li>Trousers/Jeans: £1.30</li>
+                        <li>Dresses: £1.30</li>
+                    </ul>
+
+
+                </div>
+
+
+
+                <div class="card middleCard">
+                    <span class="label">Beddings <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    <ul>
+                        <li>Single duvet cover and pillow case: £3.00</li>
+                        <li>Double duvet cover and 2 pillow cases: £4.00</li>
+                        <li>King size duvet cover and 2 pillow cases: £5.00</li>
+                        <li>Additional pillow cases: £0.25 per item</li>
+                        <li>Flat sheets/fitted sheets: £2.00</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <span class="label">Others <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
+                    </div>
+
+                    <div>
+                        <ul>
+                            <li>Baby Items: £0.80</li>
+                            <li>Hand towels: £0.75</li>
+                            <li>Bath towels: £1.00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="price-note">Collection and Delivery within Turriff: £2.50 <em>(Minimum £15 for collection and
+                    delivery).</em></span>
         </section>
-        <section>
-            <h2>Reviews</h2>
-            <p>
-                <em>See what our customers say: </em><a href="images/IMG_2650.jpg" target="_blank">Review 1</a>
-                <a href="images/IMG_2652.jpg" target="_blank">Review 2</a>
-            </p>
+
+        <!--! Testimonial Section -->
+        <section class="testimonial">
+
+            <div class="testimonial-header">
+                <h2>What Our Customers Say About Us</h2>
+            </div>
+
+            <div class="customers-review">
+                <div class="customer">
+                    <blockquote class="comment">I had a huge pile of ironing that had come back from our two weeks
+                        holiday in
+                        Spain. I hadn't
+                        been able to do it because I had been badly bitten on my legs by mosquitoes and had horrendous
+                        reactions to them. My legs were really sore and swollen so standing to iron wasn't possible.
+                        Anyway, I took the pile in a basket and they were ready for collection the next day. All
+                        imaculately ironed and folded or hung however suited me best.</blockquote>
+                    <h3 class="customer-name"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M200-440v-80h560v80H200Z" />
+                        </svg> Fran Hobson</h3>
+                </div>
+
+                <div class="customer">
+                    <blockquote class="comment">Excellent service. Friendly and accommodating, ironing was done
+                        perfectly and
+                        promptly</blockquote>
+                    <h3 class="customer-name"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M200-440v-80h560v80H200Z" />
+                        </svg> John Innes</h3>
+                </div>
+                <div class="customer">
+                    <blockquote class="comment">The quality of the ironing was
+                        impeccable – everything came back neatly pressed and looking fresh. I was particularly impressed
+                        by how they handled delicate fabrics with such care. Not only do they offer fantastic results,
+                        but their attention to detail is second to none. The convenience they provide is a game-changer.
+                        Highly recommend their service to anyone looking for professional ironing that goes above and
+                        beyond!</blockquote>
+                    <h3 class="customer-name"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M200-440v-80h560v80H200Z" />
+                        </svg> Princess Ochei</h3>
+                </div>
+                <div class="customer">
+                    <blockquote class="comment">I am beyond impressed with the ironing service provided by Ironing4you!
+                        The team
+                        was extremely professional and took great care with my clothes. They made sure to iron
+                        everything to perfection, from shirts to delicate fabrics, and even got out some stubborn
+                        wrinkles I thought would never budge. The turnaround time was fast, and the prices were very
+                        reasonable. It’s clear that they take pride in their work, and I’ll definitely be using their
+                        services again. If you're looking for a reliable, high-quality ironing service, look no further
+                        – highly recommend!</blockquote>
+                    <h3 class="customer-name"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#000000">
+                            <path d="M200-440v-80h560v80H200Z" />
+                        </svg> Darcie Gingles</h3>
+                </div>
+            </div>
+
         </section>
-        <footer>
-            <p>
-                copyright ©Vicky Harrison
-            </p>
-        </footer>
-    </div>
-    <script>
-        function adultListHover() {
-            document.getElementById('adultlist').firstElementChild.style.fontSize = "150%";
-        }
-        function adultListNormal() {
-            document.getElementById('adultlist').firstElementChild.style.fontSize = "100%";
-        }
-        function kidsListHover() {
-            document.getElementById('kidslist').firstElementChild.style.fontSize = "150%";
-        }
-        function kidsListNormal() {
-            document.getElementById('kidslist').firstElementChild.style.fontSize = "100%";
-        }
-        function babyListHover() {
-            document.getElementById('babylist').firstElementChild.style.fontSize = "150%";
-        }
-        function babyListNormal() {
-            document.getElementById('babylist').firstElementChild.style.fontSize = "100%";
-        }
-        function beddingsListHover() {
-            document.getElementById('beddingslist').firstElementChild.style.fontSize = "150%";
-        }
-        function beddingsListNormal() {
-            document.getElementById('beddingslist').firstElementChild.style.fontSize = "100%";
-        }
-        function towelsListHover() {
-            document.getElementById('towelslist').firstElementChild.style.fontSize = "150%";
-        }
-        function towelsListNormal() {
-            document.getElementById('towelslist').firstElementChild.style.fontSize = "100%";
-        }
-    </script>
+
+    </main>
+
+    <footer>
+        <span class="footer">
+            copyright &copy; Vicky Harrison
+        </span>
+    </footer>
+
+
+    <script src="index.js"></script>
 </body>
 
 </html>
