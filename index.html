@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         type="text/css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 
 <body>
@@ -64,23 +65,26 @@
         <!--! Hero section -->
         <div class="hero-section">
             <div class="hero-description">
-                <span class="desp--heroTxt">Say Goodbye to Ironing Hassles – <span class="desp__heroTxt2">Enjoy Your
+                <span class="desp--heroTxt" data-aos="fade-in" data-aos-duration="2000">Say Goodbye to Ironing Hassles –
+                    <span class="desp__heroTxt2">Enjoy Your
                         Free Time!</span></span>
 
 
-                <span class="desp--supportMsg">"Let us make your life easier with professional ironing services, so you
+                <span class="desp--supportMsg" data-aos="fade-in" data-aos-duration="2000">"Let us
+                    make your life easier with professional ironing services, so you
                     can focus on what really
                     matters."</span>
 
-                <button type="button" class="hero-btn">Get Started</button>
+                <button type="button" class="hero-btn" data-aos="slide-right" data-aos-duration="2000">Get
+                    Started</button>
             </div>
-            <picture class="hero-image">
+            <picture class="hero-image" data-aos="zoom-in" data-aos-duration="2000">
                 <img src="images/bg-shirts.webp" alt="">
             </picture>
         </div>
 
         <!--! why choose us (feature) section -->
-        <section class="features">
+        <section class="features" data-aos="flip-right" data-aos-duration="2000">
             <h2>Why Choose Us?</h2>
             <ul>
                 <li>Professional and efficient service</li>
@@ -92,13 +96,13 @@
 
         <!--! Price Section -->
         <section class="prices">
-            <div>
+            <div data-aos="zoom-in" data-aos-duration="2000">
                 <h2>Price List
                 </h2>
                 <hr class="header-underline">
             </div>
             <div class="priceLists">
-                <div class="card">
+                <div class="card" data-aos="slide-right" data-aos-duration="2000">
                     <span class="label"><span class="highlight">Adult Items <i class="fa fa-check-circle-o"
                                 aria-hidden="true"></i></span>
                     </span>
@@ -115,7 +119,7 @@
 
 
 
-                <div class="card middleCard">
+                <div class="card middleCard" data-aos="zoom-in" data-aos-duration="2000">
                     <span class="label">Beddings <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
                     <ul>
                         <li>Single duvet cover and pillow case: £3.00</li>
@@ -126,7 +130,7 @@
                     </ul>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="slide-left" data-aos-duration="2000">
                     <div>
                         <span class="label">Others <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
                     </div>
@@ -147,12 +151,12 @@
         <!--! Testimonial Section -->
         <section class="testimonial">
 
-            <div class="testimonial-header">
+            <div class="testimonial-header" data-aos="zoom-in" data-aos-duration="2000">
                 <h2>What Our Customers Say About Us</h2>
             </div>
 
             <div class="customers-review">
-                <div class="customer">
+                <div class="customer" data-aos="zoom-in" data-aos-duration="2000">
                     <blockquote class="comment">I had a huge pile of ironing that had come back from our two weeks
                         holiday in
                         Spain. I hadn't
@@ -166,7 +170,7 @@
                         </svg> Fran Hobson</h3>
                 </div>
 
-                <div class="customer">
+                <div class="customer" data-aos="zoom-in" data-aos-duration="2000">
                     <blockquote class="comment">Excellent service. Friendly and accommodating, ironing was done
                         perfectly and
                         promptly</blockquote>
@@ -175,7 +179,7 @@
                             <path d="M200-440v-80h560v80H200Z" />
                         </svg> John Innes</h3>
                 </div>
-                <div class="customer">
+                <div class="customer" data-aos="zoom-in" data-aos-duration="2000">
                     <blockquote class="comment">The quality of the ironing was
                         impeccable – everything came back neatly pressed and looking fresh. I was particularly impressed
                         by how they handled delicate fabrics with such care. Not only do they offer fantastic results,
@@ -187,7 +191,7 @@
                             <path d="M200-440v-80h560v80H200Z" />
                         </svg> Princess Ochei</h3>
                 </div>
-                <div class="customer">
+                <div class="customer" data-aos="zoom-in" data-aos-duration="2000">
                     <blockquote class="comment">I am beyond impressed with the ironing service provided by Ironing4you!
                         The team
                         was extremely professional and took great care with my clothes. They made sure to iron
@@ -199,7 +203,7 @@
                     <h3 class="customer-name"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
                             viewBox="0 -960 960 960" width="24px" fill="#000000">
                             <path d="M200-440v-80h560v80H200Z" />
-                        </svg> Darcie Gingles</h3>
+                        </svg> Darcie Thompson</h3>
                 </div>
             </div>
 
@@ -215,6 +219,10 @@
 
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
