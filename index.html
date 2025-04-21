@@ -44,20 +44,20 @@
             </nav>
 
         </div>
-
-        <ul class="sidebar">
-            <li class="closebar">
+        <div class="sidebar">
+            <div class="closebar">
                 <svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="gold">
                     <path
                         d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                 </svg>
-            </li>
-            <li><a class="sidebar-items links" href="tel:+447821161931">Phone</a></li>
-            <li><a class="sidebar-items links" href="mailto:ironing4you266@gmail.com">Email
-                    Us</a></li>
-            <li><a class="sidebar-items links" href="Forms/contactform.html" target="_parent">Enquiry Form</a></li>
-        </ul>
-
+            </div>
+            <ul>
+                <li><a class="sidebar-items links" href="tel:+447821161931">Phone</a></li>
+                <li><a class="sidebar-items links" href="mailto:ironing4you266@gmail.com">Email
+                        Us</a></li>
+                <li><a class="sidebar-items links" href="Forms/contactform.html" target="_parent">Enquiry Form</a></li>
+            </ul>
+        </div>
     </header>
 
 
@@ -78,21 +78,27 @@
                 <button type="button" class="hero-btn" data-aos="slide-right" data-aos-duration="2000">Get
                     Started</button>
             </div>
-            <picture class="hero-image" data-aos="zoom-in" data-aos-duration="2000">
-                <img src="images/bg-shirts.webp" alt="bg shirt" loading="lazy">
+            <picture data-aos="zoom-in" data-aos-duration="2000">
+                <img src="images/lady-ironig2.webp" alt="bg shirt" loading="lazy" class="ironingLady">
             </picture>
         </div>
 
         <!--! why choose us (feature) section -->
-        <section class="features" data-aos="flip-right" data-aos-duration="2000">
-            <h2>Why Choose Us?</h2>
-            <ul>
-                <li>Professional and efficient service</li>
-                <li>Affordable rates</li>
-                <li>Quick turnaround time</li>
-                <li>Convenient pick-up and delivery options</li>
-            </ul>
-        </section>
+        <div class="whyChoose-us">
+            <picture data-aos="zoom-in" data-aos-duration="2000">
+                <img src="images/lady-ironing.webp" alt="an image of a lady ironing" loading="lazy"
+                    aria-label="an image of a lady ironing" class="ironingLady">
+            </picture>
+            <section class="features" data-aos="flip-right" data-aos-duration="2000">
+                <h2>Why Choose Us?</h2>
+                <ul>
+                    <li>Professional and efficient service</li>
+                    <li>Affordable rates</li>
+                    <li>Quick turnaround time</li>
+                    <li>Convenient pick-up and delivery <span class="indentation">options</span></li>
+                </ul>
+            </section>
+        </div>
 
         <!--! Price Section -->
         <section class="prices">
@@ -121,16 +127,16 @@
 
                 <div class="card middleCard" data-aos="zoom-in" data-aos-duration="2000">
                     <span class="label">Beddings <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
-                    <ul>
-                        <li>Single duvet cover and pillow case: £3.00</li>
-                        <li>Double duvet cover and 2 pillow cases: £4.00</li>
-                        <li>King size duvet cover and 2 pillow cases: £5.00</li>
-                        <li>Additional pillow cases: £0.25 per item</li>
-                        <li>Flat sheets/fitted sheets: £2.00</li>
+                    <ul class="priceList-items">
+                        <li><span>Single duvet cover and pillow case</span> <span>£3.00</span></li>
+                        <li><span>Double duvet cover and 2 pillow cases</span> <span>£4.00</span></li>
+                        <li><span>King size duvet cover and 2 pillow cases</span> <span>£5.00</span></li>
+                        <li><span>Additional pillow cases</span> <span>£0.25</span></li>
+                        <li><span>Flat sheets/fitted sheets</span> <span>£2.00</span></li>
                     </ul>
                 </div>
 
-                <div class="card" data-aos="slide-left" data-aos-duration="2000">
+                <div id="others" class="card" data-aos="slide-left" data-aos-duration="2000">
                     <div>
                         <span class="label">Others <i class="fa fa-check-circle-o" aria-hidden="true"></i></span>
                     </div>
