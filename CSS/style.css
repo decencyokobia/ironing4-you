@@ -297,7 +297,8 @@ img.ironingLady {
 
 .features li::before {
     content: '\2713';
-    padding-right: 1rem;
+    position: fixed;
+    left: 25px;
 }
 
 @media screen and (min-width: 780px) {
@@ -340,13 +341,14 @@ img.ironingLady {
 
 .priceLists .card {
     background-color: hsl(43, 74%, 80%);
-   max-width: 300px;
-   padding: 1rem;
-   border-radius: 0.5rem;
-   font-size: 1.1rem;
-   line-height: 1.6;
-   cursor: pointer;
-   transition: transform 0.4s ease-in-out;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    cursor: pointer;
+    transition: transform 0.4s ease-in-out;
+    width: 95vw;
 }
 
 .priceLists .card:hover {
@@ -370,11 +372,15 @@ img.ironingLady {
 
 .card li {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card li::before {
+.card li::after {
     content: '\2713';
-    padding-right: 1rem;
+    position: fixed;
+    left: 25px;
 }
 
 .price-note {
@@ -396,8 +402,6 @@ img.ironingLady {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-    }.priceLists .card{
-        width: 300px; 
     }
 }
 
