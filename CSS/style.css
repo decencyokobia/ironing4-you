@@ -328,8 +328,7 @@ img.ironingLady {
 }
 
 .priceLists {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     margin-bottom: 1rem;
     gap: 2rem;
 }
@@ -385,15 +384,21 @@ img.ironingLady {
     margin-top: 1rem;
 }
 
+@media screen and (max-width: 320px){
+    .priceLists .card {
+        width: 85vw;
+    }
+}
+
 @media screen and (max-width: 820px){
     .priceLists {
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media screen and (min-width: 821px) and (max-width: 1180px){
     .priceLists {
-        /* grid-template-columns: repeat(2, 1fr); */
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -458,7 +463,9 @@ img.ironingLady {
 
 @media screen and (min-width: 1150px){
     .customers-review {
-        grid-template-columns: repeat(3, 1fr);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
     }
 }
 
