@@ -139,11 +139,6 @@ body {
     fill: black;
 }
 
-.indentation {
-   text-indent: 10rem;
-}
-
-
 @media screen and (min-width: 680px){
     .sidebar {
        width: 0;
